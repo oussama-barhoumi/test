@@ -30,6 +30,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
+  --bs-oreyll: #feb13b;
   --bs-human: #3cff00;
   --bs-alien: #001141;
   --bs-primary: #0d6efd;
@@ -40,6 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-oreyll-rgb: 254, 177, 59;
   --bs-human-rgb: 60, 255, 0;
   --bs-alien-rgb: 0, 17, 65;
   --bs-primary-rgb: 13, 110, 253;
@@ -5223,6 +5225,23 @@ textarea.form-control-lg {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
+.btn-oreyll {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #feb13b;
+  --bs-btn-border-color: #feb13b;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: rgb(254.15, 188.7, 88.4);
+  --bs-btn-hover-border-color: rgb(254.1, 184.8, 78.6);
+  --bs-btn-focus-shadow-rgb: 216, 150, 50;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: rgb(254.2, 192.6, 98.2);
+  --bs-btn-active-border-color: rgb(254.1, 184.8, 78.6);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #feb13b;
+  --bs-btn-disabled-border-color: #feb13b;
+}
+
 .btn-human {
   --bs-btn-color: #000;
   --bs-btn-bg: #3cff00;
@@ -5391,6 +5410,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #212529;
   --bs-btn-disabled-border-color: #212529;
+}
+
+.btn-outline-oreyll {
+  --bs-btn-color: #feb13b;
+  --bs-btn-border-color: #feb13b;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #feb13b;
+  --bs-btn-hover-border-color: #feb13b;
+  --bs-btn-focus-shadow-rgb: 254, 177, 59;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #feb13b;
+  --bs-btn-active-border-color: #feb13b;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #feb13b;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #feb13b;
+  --bs-gradient: none;
 }
 
 .btn-outline-human {
@@ -7132,6 +7168,13 @@ textarea.form-control-lg {
   padding: 1.25rem 1rem;
 }
 
+.alert-oreyll {
+  --bs-alert-color: var(--bs-oreyll-text-emphasis);
+  --bs-alert-bg: var(--bs-oreyll-bg-subtle);
+  --bs-alert-border-color: var(--bs-oreyll-border-subtle);
+  --bs-alert-link-color: var(--bs-oreyll-text-emphasis);
+}
+
 .alert-human {
   --bs-alert-color: var(--bs-human-text-emphasis);
   --bs-alert-bg: var(--bs-human-bg-subtle);
@@ -7501,6 +7544,19 @@ textarea.form-control-lg {
 }
 .list-group-flush > .list-group-item:last-child {
   border-bottom-width: 0;
+}
+
+.list-group-item-oreyll {
+  --bs-list-group-color: var(--bs-oreyll-text-emphasis);
+  --bs-list-group-bg: var(--bs-oreyll-bg-subtle);
+  --bs-list-group-border-color: var(--bs-oreyll-border-subtle);
+  --bs-list-group-action-hover-color: var(--bs-emphasis-color);
+  --bs-list-group-action-hover-bg: var(--bs-oreyll-border-subtle);
+  --bs-list-group-action-active-color: var(--bs-emphasis-color);
+  --bs-list-group-action-active-bg: var(--bs-oreyll-border-subtle);
+  --bs-list-group-active-color: var(--bs-oreyll-bg-subtle);
+  --bs-list-group-active-bg: var(--bs-oreyll-text-emphasis);
+  --bs-list-group-active-border-color: var(--bs-oreyll-text-emphasis);
 }
 
 .list-group-item-human {
@@ -9120,6 +9176,11 @@ textarea.form-control-lg {
   content: "";
 }
 
+.text-bg-oreyll {
+  color: #000 !important;
+  background-color: RGBA(var(--bs-oreyll-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
 .text-bg-human {
   color: #000 !important;
   background-color: RGBA(var(--bs-human-rgb), var(--bs-bg-opacity, 1)) !important;
@@ -9168,6 +9229,15 @@ textarea.form-control-lg {
 .text-bg-dark {
   color: #fff !important;
   background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
+.link-oreyll {
+  color: RGBA(var(--bs-oreyll-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-oreyll-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-oreyll:hover, .link-oreyll:focus {
+  color: RGBA(254, 193, 98, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(254, 193, 98, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-human {
@@ -9663,6 +9733,10 @@ textarea.form-control-lg {
   box-shadow: none !important;
 }
 
+.focus-ring-oreyll {
+  --bs-focus-ring-color: rgba(var(--bs-oreyll-rgb), var(--bs-focus-ring-opacity));
+}
+
 .focus-ring-human {
   --bs-focus-ring-color: rgba(var(--bs-human-rgb), var(--bs-focus-ring-opacity));
 }
@@ -9821,6 +9895,11 @@ textarea.form-control-lg {
 
 .border-start-0 {
   border-left: 0 !important;
+}
+
+.border-oreyll {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-oreyll-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-human {
@@ -14024,6 +14103,11 @@ textarea.form-control-lg {
 }
 
 /* rtl:end:remove */
+.text-oreyll {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-oreyll-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-human {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-human-rgb), var(--bs-text-opacity)) !important;
@@ -14236,6 +14320,11 @@ textarea.form-control-lg {
   text-underline-offset: 0.375em !important;
 }
 
+.link-underline-oreyll {
+  --bs-link-underline-opacity: 1;
+  text-decoration-color: rgba(var(--bs-oreyll-rgb), var(--bs-link-underline-opacity)) !important;
+}
+
 .link-underline-human {
   --bs-link-underline-opacity: 1;
   text-decoration-color: rgba(var(--bs-human-rgb), var(--bs-link-underline-opacity)) !important;
@@ -14337,6 +14426,11 @@ textarea.form-control-lg {
 
 .link-underline-opacity-100-hover:hover {
   --bs-link-underline-opacity: 1;
+}
+
+.bg-oreyll {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-oreyll-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-human {
@@ -29912,6 +30006,35 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+
+.topbar {
+  background: transparent;
+}
+
+.custum_btn {
+  border-radius: 50vw;
+  width: 9vw;
+  font-size: medium;
+}
+
+.bi {
+  color: #feb13b;
+}
+
+.custum-a a {
+  color: white;
+  font-size: medium;
 }
 
 /*# sourceMappingURL=app.css.map */
