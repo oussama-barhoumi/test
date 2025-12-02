@@ -2,17 +2,22 @@
     margin: 0;
     padding: 0;
 }
-.text a{
+.text1 a{
     text-decoration: none;
-    color: white;
+    color: white !important;
     font-size: small;
 }
 .topbar{
     background: transparent;
 }
+
+ 
+
+    
 .custum_btn{
+    color: white;
     border-radius: 50vw;
-    width: 9vw;
+    width: 10vw;
    font-size:medium;
 }
 .bi {
@@ -21,4 +26,14 @@
 .custum-a a{
     color: white;
     font-size: medium;
+}
+.carousel-custume{
+    height: 100vh;
+}
+.custume-btn-carousel{
+    border: solid $oreyll 2px;
+    background: none;
+    border-radius: 50vw;
+    color: white !important;
+
 }

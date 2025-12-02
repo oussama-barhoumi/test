@@ -30012,9 +30012,9 @@ textarea.form-control-lg {
   padding: 0;
 }
 
-.text a {
+.text1 a {
   text-decoration: none;
-  color: white;
+  color: white !important;
   font-size: small;
 }
 
@@ -30023,8 +30023,9 @@ textarea.form-control-lg {
 }
 
 .custum_btn {
+  color: white;
   border-radius: 50vw;
-  width: 9vw;
+  width: 10vw;
   font-size: medium;
 }
 
@@ -30035,6 +30036,17 @@ textarea.form-control-lg {
 .custum-a a {
   color: white;
   font-size: medium;
+}
+
+.carousel-custume {
+  height: 100vh;
+}
+
+.custume-btn-carousel {
+  border: solid #feb13b 2px;
+  background: none;
+  border-radius: 50vw;
+  color: white !important;
 }
 
 /*# sourceMappingURL=app.css.map */
