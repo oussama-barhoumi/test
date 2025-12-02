@@ -1,0 +1,25 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$red: #ff3b3b;
+$dark: #111;
+$light: #eee;
+
+
+
+$human: #3cff00;
+$alien: #001141;
+
+
+
+
+$custom-colors: (
+"human": $human,
+"alien": $alien,
+);
+$theme-colors: map-merge($custom-colors , $theme-colors);
+
+$spacer: 20px;
+@for $i from 1 through 50 {
+    $spacers: map-merge( $spacers, ($i: $i * $spacer));
+};
