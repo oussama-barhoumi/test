@@ -89599,6 +89599,14 @@ textarea.form-control-lg {
   height: 60vh;
 }
 
+.supject-cust {
+  width: 100%;
+}
+
+.info-cust {
+  width: 100%;
+}
+
 body {
   font-family: #feb13b;
   background: white;
@@ -89954,7 +89962,7 @@ body {
 }
 
 .pos-btn {
-  margin-bottom: -4.1vw;
+  margin-bottom: -4.1i fvw;
 }
 
 .brd-line {
