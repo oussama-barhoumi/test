@@ -89607,6 +89607,11 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+.bi1 {
+  font-size: xx-large;
+  color: #feb13b;
+}
+
 body {
   font-family: #feb13b;
   background: white;
