@@ -1,0 +1,90 @@
+body {
+    background: #f8f6f4;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Badge */
+.specials-badge {
+    background: rgba(228, 140, 58, 0.18);
+    color: #e48c3a;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+.specials-list li {
+    padding: 10px 0;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.specials-list li.active,
+.specials-list li:hover {
+    color: #e48c3a;
+    border-left: 3px solid #e48c3a;
+}
+
+
+.specials-heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    border-left: 3px solid #e48c3a;
+    padding-left: 10px;
+}
+
+.specials-subtext {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.specials-desc {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Right Image */
+.specials-img {
+    border-radius:50%;
+   width: 90%;
+}
+.custume-bg{
+    background-image: url(../../../../public/images/events-bg.jpg)  ;
+    height: 70vh;
+}
+.text-custum-special{
+    text-align: start;
+
+}
+.crsl-btn{
+    
+    background-color: $oreyll !important;
+    border-radius: 50%;
+    width: 0.8vw !important;
+    height: 1.1vw !important;
+}
+.pos-btn{
+ margin-bottom: -4.1i fvw ;
+}
+.brd-line{
+    border-bottom:solid 5px $oreyll;
+    width: 1.5vw;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .specials-title {
+        font-size: 26px;
+    }
+
+    .specials-heading {
+        font-size: 20px;
+    }
+}

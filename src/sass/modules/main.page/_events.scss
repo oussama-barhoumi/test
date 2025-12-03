@@ -1,0 +1,68 @@
+
+
+body {
+  font-family: $oreyll;
+  background: white;
+  color: #333;
+}
+
+header {
+  .brand {
+    font-family: $oreyll;
+    font-weight: 700;
+    color: #333;
+    .accent {
+      color: $oreyll;
+    }
+  }
+  .badge {
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: rgba(246,178,75,0.08);
+    color: darken($oreyll, 10%);
+  }
+}
+
+
+
+
+/* Left image styles */
+.left-image {
+  background: #eee;
+  img.object-cover {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+
+
+/* Button */
+.btn-primary {
+  background-color: $oreyll;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: none;
+}
+.form{
+    width: 33vw;
+}
+.form1{
+    width: 30vw;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+  .booking-card {
+    border-radius: 6px;
+  }
+  .left-image {
+    display: none !important;
+  }
+  header .brand {
+    font-size: 1.6rem;
+  }
+}

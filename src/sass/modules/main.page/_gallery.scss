@@ -1,0 +1,20 @@
+.gallery-section {
+  background: #fff;
+
+}
+.cont{
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+}
+
+    
+
+    img {
+    width: 30vw;
+      transition: 0.4s ease;
+
+      &:hover {
+        transform: scale(1.08);
+      }
+}

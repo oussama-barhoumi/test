@@ -22,6 +22,16 @@ $custom-colors: (
 $theme-colors: map-merge($custom-colors , $theme-colors);
 
 $spacer: 20px;
-@for $i from 1 through 100 {
+@for $i from -100 through 100 {
     $spacers: map-merge( $spacers, ($i: $i * $spacer));
 };
+
+
+@font-face {
+    font-family: "Satisfy";
+    src: url(../../public/fonts/Satisfy/Satisfy-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-size: normal;
+};
+
+$my-font:"Satisfy";

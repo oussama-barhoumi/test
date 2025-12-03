@@ -6,11 +6,16 @@
  }
 .card-about p{
     font-size: small;
+    font-family: $my-font;
 
     }
 
+   .card-about-hov{
+       transition: 0.4s ease; 
+    }
  .card-about-hov:hover{
     background-color: $oreyll !important;
     color: white !important;
+    transform: scale(1.08);
  }
  
