@@ -211,10 +211,7 @@
   <div class="kicker">MENU</div>
     <h1 class="title fa">Check Our Tasty <span class="text-oreyll">Menu</span></h1>
     <nav class="filters">
-      <div>
-        <input type="checkbox" id="first" >
-        <label for="first">All</label>
-      </div>
+      <button class="filter">all</button>
       <button class="filter">Starters</button>
       <button class="filter">Salads</button>
       <button class="filter">Specialty</button>
@@ -390,15 +387,40 @@
         <div class="d-flex">
             <div class=" mb-5 ms-15 mb-4 ">
                 <ul class="specials-list">
+                  <div id="first">
+                  <input type="checkbox" id="1">
+                  <label for="1">
                     <li class="active">Modi sit est</li>
+                  </label>
+                </div>
+                <div>
+                  <input type="checkbox" id="2">
+                  <label for="2">
                     <li>Unde praesentium sed</li>
+                  </label>
+                </div>
+                <div>
+                  <input type="checkbox" id="3">
+                  <label for="3">
                     <li>Pariatur explicabo vel</li>
+                  </label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="4">
+                  <label for="4">
                     <li>Nostrum qui quasi</li>
+                  </label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="5">
+                  <label for="5">
                     <li>Iusto ut expedita aut</li>
+                  </label>
+                </div>
                 </ul>
             </div>
 
-            <div class=" ms-8 col-lg-3 mb-4 ">
+            <div class=" ms-8 col-lg-3 mb-4  #first">
                 <h3 class="specials-heading fa-1">Architecto ut aperiam autem id</h3>
 
                 <p class="specials-subtext">
@@ -422,7 +444,7 @@
 
         </div>
     </div>
-</section>
+
 <section class="custume-bg ">
   <div id="carouselExampleDark2" class="carousel carousel-dark slide">
   <div class="carousel-indicators pos-btn">
@@ -728,7 +750,7 @@
                 </div>
 
                 <div class="col-12 text-center">
-                  <button type="submit" class="btn btn-primary btn-lg px-4">Book a Table</button>
+                  <button type="submit" class="btn btn-primary btn-lg px-5">Book a Table</button>
                 </div>
               </div>
             </form>
@@ -741,13 +763,95 @@
 </section>
 
 
+  <footer class="site-footer py-5 bg-brown">
+    <div class="container">
+      <div class="row text-light">
+
+        <div class="col-md-4 mb-4">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-geo-alt-fill me-2" style="font-size:18px;color:var(--accent);"></i>
+            <div>
+              <div class="footer-heading">Address</div>
+              <div style="color:var(--muted);">
+                A108 Adam Street<br>
+                New York, NY 535022
+              </div>
+            </div>
+          </div>
+        </div>
 
 
+        <div class="col-md-4 mb-4">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-telephone-fill me-2" style="font-size:18px;color:var(--accent);"></i>
+            <div>
+              <div class="footer-heading">Contact</div>
+              <div style="color:var(--muted);">
+                <div>Phone: +1 5589 55488 55</div>
+                <div>Email: <a href="mailto:info@example.com">info@example.com</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
+        <div class="col-md-4 mb-4">
+          <div class="d-flex align-items-start justify-content-between">
+            <div>
+              <div class="d-flex align-items-start">
+                <i class="bi bi-clock-fill me-2" style="font-size:18px;color:var(--accent);"></i>
+                <div>
+                  <div class="footer-heading">Opening Hours</div>
+                  <div style="color:var(--muted);">
+                    <div>Mon-Sat: 11AM - 23PM</div>
+                    <div>Sunday: Closed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
- 
+            <div class="text-end d-none d-md-block">
+              <div class="footer-heading">Follow Us</div>
+              <div class="mt-2">
+                <a class="social-circle" href="#" aria-label="Twitter"><i class="bi bi-x-lg"></i></a>
+                <a class="social-circle" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a class="social-circle" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a class="social-circle" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="d-block d-md-none socials-mobile-center mt-3 text-start">
+
+            <div class="footer-heading">Follow Us</div>
+            <div class="mt-2">
+              <a class="social-circle" href="#"><i class="bi bi-x-lg"></i></a>
+              <a class="social-circle" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="social-circle" href="#"><i class="bi bi-instagram"></i></a>
+              <a class="social-circle" href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <hr class="footer-hr">
+
+      <div class="row align-items-center ">
+        <div class="col-md-6 text-center ms-15 ">
+          <div>
+            <p class="text-white">© Copyright Delicious All Rights Reserved</p>
+          </div>
+          <div>
+            <p>Designed by <span class="text-oreyll">BootstrapMade</span>  </p>
+          </div>
+         
+      </div>
+    </div>
+  </footer>
 
  
    
