@@ -89706,6 +89706,109 @@ textarea.form-control-lg {
   color: #feb13b;
 }
 
+@media (max-width: 768px) {
+  /* Top bar */
+  .topbar .text1 {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  .custom-navbar .navbar-nav {
+    gap: 0;
+    text-align: center;
+  }
+  .custom-navbar .navbar-nav .nav-item {
+    padding: 8px 0;
+  }
+  /* Carousel caption */
+  .carousel-caption {
+    bottom: 20px !important;
+    padding: 0 20px;
+  }
+  .carousel-caption h5, .carousel-caption .h5 {
+    font-size: 1.2rem;
+  }
+  .carousel-caption p {
+    font-size: 0.85rem;
+  }
+  .custume-btn-carousel {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+  /* About section */
+  .hero .row {
+    flex-direction: column;
+  }
+  .media-card img {
+    width: 100%;
+  }
+  /* Why choose us cards */
+  .card-about {
+    margin: 0 !important;
+    padding: 0 20px;
+  }
+  .card-about-hov {
+    height: auto !important;
+  }
+  /* MENU GRID */
+  .menu-wrapper {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .menu-column {
+    width: 100%;
+  }
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-item .thumb {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto 10px;
+  }
+  .leader {
+    display: none;
+  }
+  /* Specials */
+  .specials-list {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+  }
+  .specials-heading {
+    font-size: 1.3rem;
+  }
+  /* Events carousel fix */
+  .text-custum-special {
+    left: 0 !important;
+    padding: 10px !important;
+  }
+  #carouselExampleDark2 img {
+    width: 100% !important;
+    padding: 0;
+  }
+}
+@media (max-width: 430px) {
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+  .carousel-caption h5, .carousel-caption .h5 {
+    font-size: 1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.75rem;
+  }
+  .custume-btn-carousel {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+  .specials-img {
+    width: 100% !important;
+    height: auto;
+  }
+}
 body {
   font-family: #feb13b;
   background: white;
