@@ -89838,18 +89838,6 @@ header .badge {
   width: 30vw;
 }
 
-/* Responsive tweaks */
-@media (max-width: 767.98px) {
-  .booking-card {
-    border-radius: 6px;
-  }
-  .left-image {
-    display: none !important;
-  }
-  header .brand {
-    font-size: 1.6rem;
-  }
-}
 .gallery-section {
   background: #fff;
 }
@@ -89903,6 +89891,113 @@ img:hover {
   font-size: 2.3vw;
 }
 
+/* -------------------------
+   GLOBAL MOBILE SETTINGS
+--------------------------*/
+@media (max-width: 768px) {
+  .topbar .text1 {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  .custom-navbar .navbar-nav {
+    gap: 0;
+    text-align: center;
+  }
+  .custom-navbar .navbar-nav .nav-item {
+    padding: 8px 0;
+  }
+  .carousel-caption {
+    bottom: 20px !important;
+    padding: 0 20px;
+  }
+  .carousel-caption h5, .carousel-caption .h5 {
+    font-size: 1.2rem;
+  }
+  .carousel-caption p {
+    font-size: 0.85rem;
+  }
+  .custume-btn-carousel {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+  /* Hero About Section */
+  .hero .row {
+    flex-direction: column;
+  }
+  .media-card img {
+    width: 100%;
+  }
+  /* Why choose us */
+  .card-about {
+    margin: 0 !important;
+    padding: 0 20px;
+  }
+  .card-about-hov {
+    height: auto !important;
+  }
+  /* Menu area */
+  .menu-wrapper {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .menu-wrapper .menu-column {
+    width: 100%;
+  }
+  .menu-wrapper .menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-wrapper .menu-item .thumb {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto 10px;
+  }
+  .menu-wrapper .menu-item .leader {
+    display: none;
+  }
+  /* Specials */
+  .specials-list {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+  }
+  .specials-heading {
+    font-size: 1.3rem;
+  }
+  /* Events */
+  .text-custum-special {
+    left: 0 !important;
+    padding: 10px !important;
+  }
+  #carouselExampleDark2 img {
+    width: 100% !important;
+    padding: 0;
+  }
+}
+/* -------------------------
+   SMALL PHONES <430px
+--------------------------*/
+@media (max-width: 430px) {
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+  .carousel-caption h5, .carousel-caption .h5 {
+    font-size: 1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.75rem;
+  }
+  .custume-btn-carousel {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+  .specials-img {
+    width: 100% !important;
+    height: auto;
+  }
+}
 .custum_btn {
   color: white;
   border-radius: 50vw;
@@ -90116,16 +90211,6 @@ body {
 .brd-line {
   border-bottom: solid 5px #feb13b;
   width: 1.5vw;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .specials-title {
-    font-size: 26px;
-  }
-  .specials-heading {
-    font-size: 20px;
-  }
 }
 
 /*# sourceMappingURL=app.css.map */

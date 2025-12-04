@@ -54,15 +54,4 @@ header {
 }
 
 
-/* Responsive tweaks */
-@media (max-width: 767.98px) {
-  .booking-card {
-    border-radius: 6px;
-  }
-  .left-image {
-    display: none !important;
-  }
-  header .brand {
-    font-size: 1.6rem;
-  }
-}
+
